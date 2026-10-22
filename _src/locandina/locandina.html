@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Locandina · Attico dell'Artista</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+@page{size:A4;margin:0}
+:root{--teal:#24474f;--cream:#f4efe7;--paper:#fbf9f5;--ink:#1c2326;--muted:#5d686c;--accent:#e0762b}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper)}
+body{font:300 10.5pt/1.5 "Jost",sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;overflow:hidden;display:flex;flex-direction:column}
+strong{font-weight:600}
+
+/* hero */
+.hero{position:relative;height:138mm;display:flex;flex-direction:column;justify-content:space-between;padding:12mm 16mm 12mm;color:#fff;background:#0e161a url(../../img/hero-1598.webp) center 62%/cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,22,26,.62),rgba(14,22,26,.12) 75%),linear-gradient(0deg,rgba(14,22,26,.55),transparent 55%)}
+.hero>*{position:relative;z-index:1}
+.top{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:3.5mm;text-transform:uppercase;letter-spacing:.14em;font-size:9pt;font-weight:400}
+.brand img{width:11mm;height:11mm;border-radius:1mm}
+.tag{background:var(--accent);padding:2mm 4.5mm;border-radius:1mm;text-transform:uppercase;letter-spacing:.22em;font-size:8.5pt;font-weight:400}
+.hero-txt{}
+.kicker{text-transform:uppercase;letter-spacing:.26em;font-size:8pt;font-weight:400;margin-bottom:4mm}
+h1{font-weight:300;font-size:34pt;line-height:1.02;margin:0 0 5mm;text-transform:uppercase;letter-spacing:.01em}
+h1 strong{font-weight:600}
+.bar{width:14mm;height:.8mm;background:var(--accent);margin-bottom:3.5mm}
+.sub{text-transform:uppercase;letter-spacing:.16em;font-size:10pt;font-weight:400}
+
+/* fatti */
+.facts{display:grid;grid-template-columns:repeat(5,1fr);background:var(--cream);padding:5mm 12mm;text-align:center}
+.facts div{padding:0 2mm;border-left:.25mm solid rgba(0,0,0,.12)}
+.facts div:first-child{border:0}
+.facts b{display:block;font-weight:300;font-size:19pt;line-height:1.1;color:var(--teal)}
+.facts span{display:block;font-size:7.5pt;line-height:1.25;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:1mm}
+
+/* corpo */
+.body{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:8mm;padding:7mm 16mm 0}
+.eyebrow{text-transform:uppercase;letter-spacing:.28em;font-size:7.5pt;font-weight:400;color:var(--accent);margin-bottom:2.5mm}
+h2{font-weight:300;font-size:17pt;line-height:1.12;margin:0 0 3mm;color:var(--teal)}
+h2 strong{font-weight:600}
+p{margin:0 0 2.5mm}
+.photos{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:36mm 28mm;gap:2mm}
+.photos div{background:center/cover;border-radius:1mm}
+.photos .big{grid-column:1/3}
+.amen{display:flex;flex-wrap:wrap;gap:1.6mm;margin-top:3.5mm}
+.amen span{border:.25mm solid rgba(36,71,79,.35);color:var(--teal);border-radius:10mm;padding:.6mm 3mm;font-size:8pt;font-weight:400}
+.by{margin-top:4mm;font-size:9pt;color:var(--muted)}
+
+/* piede */
+.foot{display:grid;grid-template-columns:1fr auto;gap:10mm;align-items:center;background:var(--teal);color:#e8ecec;padding:8mm 16mm;margin-top:6mm}
+.price-l{text-transform:uppercase;letter-spacing:.2em;font-size:7.5pt;color:#f29a5c;font-weight:400}
+.price{font-size:26pt;font-weight:600;color:#fff;line-height:1.1;margin:1mm 0 .5mm}
+.price-s{font-size:9pt;opacity:.85}
+.price-rows{display:flex;gap:6mm;font-size:9pt;margin:2.5mm 0 5mm;opacity:.9}
+.price-rows b{color:#fff;font-weight:600}
+.ct{font-size:10pt;line-height:1.55}
+.ct .n{font-size:12pt;color:#fff;font-weight:400}
+.ct .tel{font-size:15pt;color:#fff;font-weight:600;letter-spacing:.02em}
+.qr{background:#fff;border-radius:1.5mm;padding:4mm 4mm 3mm;text-align:center;color:var(--teal)}
+.qr img{width:40mm;height:40mm;display:block}
+.qr .u{font-weight:600;font-size:9.5pt;margin-top:2mm}
+.qr .h{font-size:7.5pt;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="hero">
+    <div class="top"><div class="brand"><img src="../../img/logo-125.webp" alt="">Attico dell'Artista</div>
+    <div class="tag">In vendita</div></div>
+    <div class="hero-txt">
+      <div class="kicker">Residence Villa Ada Troubetzkoy · Ghiffa · Lago Maggiore</div>
+      <h1><strong>Lo spettacolo</strong><br>dall'attico<br>dell'artista</h1>
+      <div class="bar"></div>
+      <div class="sub">Vendita quadrilocale mansardato · B401</div>
+    </div>
+  </header>
+
+  <section class="facts">
+    <div><b>110 m²</b><span>su un unico piano</span></div>
+    <div><b>3</b><span>camere</span></div>
+    <div><b>1</b><span>office</span></div>
+    <div><b>2</b><span>bagni</span></div>
+    <div><b>3</b><span>logge, una panoramica</span></div>
+  </section>
+
+  <section class="body">
+    <div>
+      <div class="eyebrow">La casa</div>
+      <h2>Ci sono case che si abitano<br><strong>e case che si contemplano</strong></h2>
+      <p>Al quarto e ultimo piano di un residence immerso in un parco d'epoca, l'attico si affaccia sul Lago Maggiore come un belvedere privato. Nessun edificio di fronte: soltanto acqua, montagne e cielo.</p>
+      <p>Una mansarda su un unico piano, pensata da un architetto con lo sguardo di pittrice: opera compiuta e, insieme, tela ancora aperta, personalizzabile con l'architetto.</p>
+      <div class="amen"><span>Piscina</span><span>Spiaggia privata</span><span>Porticciolo</span><span>Tennis</span><span>Parco secolare</span><span>Custode</span></div>
+      <div class="by">Una proposta firmata <strong>Anna Mazzola</strong>, architetto</div>
+    </div>
+    <div class="photos">
+      <div class="big" style="background-image:url(../../img/r2-arredata-1280.webp)"></div>
+      <div style="background-image:url(../../img/vista-06-1280.webp)"></div>
+      <div style="background-image:url(../../img/porto-1280.webp)"></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div>
+      <div class="price-l">Attico, lavanderia e garage</div>
+      <div class="price">€ 730.000</div>
+      <div class="price-rows"><span>Solo attico e lavanderia <b>€ 650.000</b></span><span>Garage <b>€ 80.000</b></span></div>
+      <div class="ct">
+        <div class="n">Anna Mazzola · Art Architect</div>
+        <div class="tel">+39 335 585 8642</div>
+        <div>ateliermazzola@gmail.com · Vendita diretta dalla proprietà</div>
+      </div>
+    </div>
+    <div class="qr">
+      <img src="qr.svg" alt="QR code villaada-b401.com">
+      <div class="u">villaada-b401.com</div>
+      <div class="h">Foto, pianta e visite</div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
