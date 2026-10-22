@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 LANGS = ["it", "en", "de", "fr", "es"]  # il primo è la lingua principale (radice del sito)
 # Dominio definitivo, senza barra finale (es. "https://www.atticodellartista.it").
 # Serve per hreflang/canonical/og:image assoluti. Vuoto = percorsi relativi alla radice.
-BASE = "https://ugodeughi.github.io/atticoartista"
+BASE = "https://villaada-b401.com"
 
 PHONE = "+393355858642"
 EMAIL = "ateliermazzola@gmail.com"

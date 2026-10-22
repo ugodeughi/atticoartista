@@ -8,13 +8,14 @@ Lingue: italiano (`/`), inglese (`/en/`), tedesco (`/de/`), francese (`/fr/`), s
 2. Rigenera le pagine:  `python3 _src/build.py`
 3. Se cambi titolo/sottotitolo, rigenera anche le immagini social: `python3 _src/og.py` (richiede Pillow, font macOS)
 
-## Prima della pubblicazione
-In `_src/build.py` imposta `BASE = "https://tuodominio.it"` e rilancia lo script:
-rende assoluti hreflang/canonical/og:image e genera `sitemap.xml`.
+## Dominio
+Il dominio è impostato in `_src/build.py` (`BASE = "https://villaada-b401.com"`):
+se cambia, aggiorna `BASE` e `robots.txt`, poi rilancia `python3 _src/build.py`.
 
 ## Anteprima locale
 `python3 -m http.server 8000` → http://localhost:8000
 
-## Pubblicazione
-Carica la cartella su un hosting statico (Netlify, Cloudflare Pages, GitHub Pages, FTP).
-La cartella `_src` non serve online: puoi escluderla.
+## Pubblicazione (Vercel)
+Progetto statico, nessuna build: Framework Preset "Other", Build Command vuoto,
+Output Directory `.` (radice). Ogni push su `main` viene pubblicato in automatico.
+`vercel.json` imposta cache e header; `.vercelignore` esclude `_src`.

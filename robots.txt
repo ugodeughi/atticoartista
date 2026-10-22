@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://ugodeughi.github.io/atticoartista/sitemap.xml
+Sitemap: https://villaada-b401.com/sitemap.xml
