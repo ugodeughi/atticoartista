@@ -111,7 +111,7 @@ def build(lang):
 
     hero_ws, (hw, hh) = SZ["hero"]
     hero_ss = srcset("hero")
-    og_img = f"{BASE}/img/hero-{hero_ws[-1]}.webp"
+    og_img = f"{BASE}/img/og-{lang}.jpg"
 
     ld = {"@context": "https://schema.org", "@type": "RealEstateListing", "inLanguage": lang,
           "name": T["ld_name"], "description": T["ld_desc"], "url": url(lang), "image": og_img,
@@ -146,6 +146,15 @@ def build(lang):
 <meta property="og:title" content="{esc(T["og_title"])}">
 <meta property="og:description" content="{esc(T["og_desc"])}">
 <meta property="og:image" content="{og_img}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{esc(T["og_title"])}">
+<meta property="og:site_name" content="Attico dell'Artista">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(T["og_title"])}">
+<meta name="twitter:description" content="{esc(T["og_desc"])}">
+<meta name="twitter:image" content="{og_img}">
 <meta property="og:url" content="{url(lang)}">
 <meta property="og:locale" content="{T["locale"]}">
 {"".join(f'<meta property="og:locale:alternate" content="{others[l]["locale"]}">' for l in LANGS if l != lang)}
