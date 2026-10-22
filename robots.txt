@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ugodeughi.github.io/atticoartista/sitemap.xml
